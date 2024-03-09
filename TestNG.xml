@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest" verbose="2">
+	  	  	<parameter name="browser" value="chrome"></parameter>	
+	  	  
+    <classes>
+      <class name="org.fitpeo.FitpeoAsses"/>
+    </classes>
+  
+  </test> <!-- Default test -->
+  <test thread-count="5" name="FirefoxTest" verbose="2">
+	  	  	<parameter name="browser" value="firefox"></parameter>	
+	  	  
+    <classes>
+      <class name="org.fitpeo.FitpeoAsses"/>
+    </classes>
+  
+  </test> <!-- Default test -->
+  
+</suite> <!-- Default suite -->
